@@ -14,7 +14,7 @@ int main(void)
 
 
 
-   if((ch & 0x80)==0)		/*1 byte */
+   if((ch & LIMIT1)==0)		/*1 byte: (If first byte is 0x80)*/
    {
     codepoint=ch;
     a++;
@@ -34,7 +34,7 @@ int main(void)
     }
 
   
-    if((ch&0xC0)!=0x80)    /*The first 2 bits of the 2nd Byte  aren't 10*/
+    if((ch&0xC0)!=LIMIT1)    /*The first 2 bits of the 2nd Byte  aren't 10*/////
     {
      printf("Invalid UTF-8 tail byte 0x%02x\n",ch); 
      return 2;
@@ -73,7 +73,7 @@ int main(void)
         codepoint+=(ch & 0x3F);
        }
 
-      if((codepoint>=0xd800) && (codepoint<=0xDfff))
+      if((codepoint>=0xD800) && (codepoint<=0xDfff))
       {
         printf("Invalid UTF-8 code point: U+%04x\n",codepoint);
         return 9;
@@ -118,7 +118,7 @@ int main(void)
       }
       multi_counter++;
 
-     }
+    }
   
       else 
       {
