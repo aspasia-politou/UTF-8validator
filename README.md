@@ -10,7 +10,7 @@ This will generate an executable file named "UTF-8validator" in your current dir
 <h2>Usage</h2>
 Once you've compiled the program, you can use it to validate a UTF-8 encoded file or input stream by running: <br>
 <code>./UTF-8validator < input_file </code> <br>
-Replace "input_file" with the name of the file you want to validate<br>.
+Replace "input_file" with the name of the file you want to validate.<br>
 The program will print error messages to standard output if it encounters any issues, and return an error code indicating the type of error it encountered. If the input is valid UTF-8, it will print a message indicating how many ASCII and multi-byte characters it found.<br>
 <h2>Contributing</h2>
 The program will print error messages to standard output if it encounters any issues, and return an error code indicating the type of error it encountered. If the input is valid UTF-8, it will print a message indicating how many ASCII and multi-byte characters it found.
