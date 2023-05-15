@@ -4,7 +4,7 @@ This project was developed as part of the coursework for K04: Introduction to Pr
 UTF-8validator is a C program that validates whether a given input stream is valid UTF-8 or not. It checks for invalid byte sequences, oversized code points, and other common errors.
 <h2>Installation</h2>
 To use UTF-8validator, you'll need a C compiler installed on your system. You can compile the program by running the following command in your terminal:<br>
-<code> gcc UTF-8validate.c -o UTF-8validator </code>
+<code> gcc utf8validate.c -o UTF-8validator </code>
 <br>
 This will generate an executable file named "UTF-8validator" in your current directory. <br>
 <h2>Usage</h2>
